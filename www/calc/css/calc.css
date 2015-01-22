@@ -1,0 +1,236 @@
+	#__calc
+{
+    width:800px; /* 960 */
+    padding:10px;      
+	font-size: 0.9em;
+}
+#__res_layout
+{
+    #border:1px solid;
+    width:100%;
+    height:460px; /* 460     */
+    padding-top:10px;
+}
+#__result
+{
+    height:100%;
+    /*width:450px;*/
+    margin:auto auto;
+    position:relative;
+   /*# text-align:center !important;*/
+    color:white;
+}
+#__image 
+{
+    position:absolute;
+    bottom:30px;
+    left:70px;
+}
+#__res_price
+{
+    padding-top: 22px;
+    display:block;
+    font-size:18px;
+    text-align: left !important;
+    line-height:32px;
+	color: #F00;
+	font-weight:bold;
+}
+#__res_price div
+{
+    display:inline-block;
+}
+#__add_info
+{
+    font-size:15px;
+    line-height:20px;
+    #text-align:center !important;
+    margin:0 auto;
+    width:100%;
+	font-style:italic;
+}
+.grid {
+    width: 282px;
+    height: 5px;
+    margin: 7px 10px;
+    background-image: url(../img/slider_grid.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.vgrid {
+    moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    width: 282px;
+    height: 5px;
+    margin: 7px 0px;
+    /*background-image: url(../img/slider_gridv.png); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 360px;
+    left: -108px;
+}
+#__color_cont
+{
+    display:inline-block;
+	margin-left:30%;
+	margin-bottom: 170px; /* авторский код  */
+	
+	
+    
+}
+#__width_cont
+{
+    display:inline-block;
+	font-size: 0.95em;
+}
+#__height_cont
+{
+    display:block;
+    float:left;
+	font-size: 0.95em;
+
+}
+#__height_cont #label
+{
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+        margin: 70px -33px;
+}
+#__width_cont #label
+{
+   display:inline-block;
+   margin:0 22px;
+}
+#__length 
+{
+    display:inline-block;
+    width:300px;
+    margin-left:0px;
+}
+#__height
+{
+    margin: 20px;
+    height:300px;  /* height:300px;    */
+
+}
+
+#colorSelector {
+    position: relative;
+
+}
+#colorSelector div {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 30px;
+    height: 30px;
+    background: url(images/select.png) center;
+}
+#info_block {
+	height: 33px;
+	float: left;
+	line-height: 20px;
+	font-size: 0.95em;
+	margin-left: -160px;
+}
+#__length a, #__height a{
+	width: 35px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 10px;
+}
+#__height a {
+	left: -11px;
+	-moz-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	`margin: 80px -38px;
+}
+#info_block {
+	float: right;
+}
+
+
+.str1{
+	color: #00FF00;
+	position:absolute;
+    bottom:30px;
+    left:70px;
+	background: #000;
+	/*width: 700px; */
+	height: 30px;
+}
+.lenta-bg {
+	background-image: url(../img/lenta-bg.png);
+	position: absolute;
+	z-index:100;
+	bottom:30px;
+    left:70px;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+}
+.str_wrap p {
+	padding:9px 0;
+	margin:0;
+	text-transform: uppercase;
+	vertical-align: middle;
+	display: table;
+	text-align: right;
+}
+.vfont {
+	position: relative;
+	top: 50%; 
+}
+/*Plugin CSS*/
+.str_wrap {
+	overflow:hidden;
+    font-weight: bold;
+	width:800px; /*100%;*/
+	font-size:12px;
+	line-height:16px;
+	/*position:relative;*/
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;  
+	background:#000; /*#f6f6f6;*/
+	white-space:nowrap;
+}
+
+.str_wrap.str_active {
+	/*background:#f1f1f1;*/
+}
+.str_move { 
+	white-space:nowrap;
+	position:absolute; 
+	top:0; 
+	left:0;
+	cursor:move;
+}
+.str_move_clone {
+	display:inline-block;
+	vertical-align:top;
+	position:absolute; 
+	left:100%;
+	top:0;
+}
+.str_vertical .str_move_clone {
+	left:0;
+	top:100%;
+}
+.str_down .str_move_clone {
+	left:0;
+	bottom:100%;
+}
+.str_vertical .str_move,
+.str_down .str_move {
+	white-space:normal;
+	width:100%;
+}
+.str_static .str_move,
+.no_drag .str_move{
+	cursor:inherit;
+}
